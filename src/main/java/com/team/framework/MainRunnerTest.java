@@ -23,14 +23,14 @@ import org.openqa.selenium.WebDriver;
 //        plugin = {"html:target/cucumber-html-report"}
 //)
 
-public class MainRunner {
+public class MainRunnerTest {
 
     public static final WebDriver driver = null;
-    static Logger log = Logger.getLogger(MainRunner.class);
+    static Logger log = Logger.getLogger(MainRunnerTest.class);
 
 
     public static void main(String Args[]) throws InterruptedException, IOException {
-        MainRunner mn = new MainRunner();
+        MainRunnerTest mn = new MainRunnerTest();
         long startTime =  System.nanoTime();
         BasicConfigurator.configure();
         ArrayList<String> ae = mn.getScenarios();
