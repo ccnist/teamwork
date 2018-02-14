@@ -85,6 +85,7 @@
                            <includesFile>**/*RunConfig.java</includesFile>
                            <includesFile>**/*Runner.java</includesFile>
                            <includesFile>**/*Steps.java</includesFile>
+                           <test>com.team.framework.MainRunner.java</test>
                         </includes>
                     </configuration>
                     <goals>

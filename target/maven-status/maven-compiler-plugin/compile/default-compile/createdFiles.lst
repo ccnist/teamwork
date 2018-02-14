@@ -1,4 +1,4 @@
 com\team\framework\DriverConfig.class
 com\team\framework\hooks.class
+com\team\framework\MainRunner.class
 com\team\framework\RunConfig.class
-com\team\framework\MainRunnerTest.class
