@@ -1,6 +1,5 @@
 package com.team.framework;
 
-import cucumber.api.CucumberOptions;
 import cucumber.api.cli.Main;
 
 import org.apache.log4j.BasicConfigurator;
@@ -13,8 +12,6 @@ import java.util.ArrayList;
  * Created by cchandragiri on 4/12/2017.
  */
 
-import org.junit.runner.RunWith;
-import cucumber.api.junit.Cucumber;
 import org.openqa.selenium.WebDriver;
 
 //@RunWith(Cucumber.class)
@@ -23,14 +20,14 @@ import org.openqa.selenium.WebDriver;
 //        plugin = {"html:target/cucumber-html-report"}
 //)
 
-public class MainRunnerTest {
+public class MainRunner {
 
     public static final WebDriver driver = null;
-    static Logger log = Logger.getLogger(MainRunnerTest.class);
+    static Logger log = Logger.getLogger(MainRunner.class);
 
 
     public static void main(String Args[]) throws InterruptedException, IOException {
-        MainRunnerTest mn = new MainRunnerTest();
+        MainRunner mn = new MainRunner();
         long startTime =  System.nanoTime();
         BasicConfigurator.configure();
         ArrayList<String> ae = mn.getScenarios();

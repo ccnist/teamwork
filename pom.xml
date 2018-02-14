@@ -81,7 +81,10 @@
                         <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
                         <testFailureIgnore>true</testFailureIgnore>
                         <includes>
-                           <includesFile>**/*Test.java</includesFile>
+                           <includesFile>**/*DriverConfig.java</includesFile>
+                           <includesFile>**/*RunConfig.java</includesFile>
+                           <includesFile>**/*Runner.java</includesFile>
+                           <includesFile>**/*Steps.java</includesFile>
                         </includes>
                     </configuration>
                     <goals>
