@@ -79,7 +79,7 @@
                             <testFailureIgnore>true</testFailureIgnore>
                             <includes>
                                 <include>src/test/java/**/*</include>
-                                <include>/src/test//resources/features/**/*</include>
+                                <include>/src/test/resources/features/**/*</include>
                                 <include>/src/main/**/*</include>
                             </includes>
                         </configuration>
