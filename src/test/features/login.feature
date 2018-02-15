@@ -1,5 +1,6 @@
 Feature: Test Scenario for Jenkins
 
+  @now
   Scenario: Verify user login
     Given I navigated to home
     When I enter login id

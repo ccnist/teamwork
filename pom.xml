@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>teamwork</groupId>
-    <artifactId>1.0</artifactId>
+    <groupId>com.team</groupId>
+    <artifactId>teamwork</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
@@ -81,11 +81,9 @@
                         <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
                         <testFailureIgnore>true</testFailureIgnore>
                         <includes>
-                           <includesFile>**/*DriverConfig.java</includesFile>
-                           <includesFile>**/*RunConfig.java</includesFile>
-                           <includesFile>**/*Runner.java</includesFile>
-                           <includesFile>**/*Steps.java</includesFile>
-                           <test>com.team.framework.MainRunner.java</test>
+                            <include>src/test/java/**/*</include>
+                            <include>/srctest/features/**/*</include>
+                            <include>/src/main/**/*</include>
                         </includes>
                     </configuration>
                     <goals>
