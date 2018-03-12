@@ -1,5 +1,6 @@
 package com.team.framework;
 
+import cucumber.api.CucumberOptions;
 import cucumber.api.cli.Main;
 
 import org.apache.log4j.BasicConfigurator;
@@ -7,6 +8,7 @@ import org.apache.log4j.Logger;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Created by cchandragiri on 4/12/2017.
@@ -14,11 +16,6 @@ import java.util.ArrayList;
 
 import org.openqa.selenium.WebDriver;
 
-//@RunWith(Cucumber.class)
-//@CucumberOptions(
-//        features={"src/test/features/login.feature"},
-//        plugin = {"html:target/cucumber-html-report"}
-//)
 
 public class MainRunner {
 
@@ -26,7 +23,7 @@ public class MainRunner {
     static Logger log = Logger.getLogger(MainRunner.class);
 
 
-    public static void main(String Args[]) throws InterruptedException, IOException {
+    public static void main(String Args[]) throws IOException {
         MainRunner mn = new MainRunner();
         long startTime =  System.nanoTime();
         BasicConfigurator.configure();
